@@ -1,0 +1,136 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  display: flex;
+  width: 100vw;
+  height: 8vh;
+  align-items: center;
+  padding: 5px 15px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  }
+.header-title {
+  color: rgb(155, 151, 151);
+  }
+.nav-bar{
+  display: flex;
+  height: 100%;
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+  }
+.nav-item {
+  margin-left: 10px;
+  color: rgb(155, 151, 151);
+  }
+.nav-item:hover {
+  color: #b8b9b9;
+  }
+.menu{
+  display: flex;
+  padding: 7px;
+  height: 5vh;
+  width: 84px;
+  border: 2px solid rgb(107,205,251);
+  border-radius: 4px;
+  display: none;
+  }
+.menu-title{
+  color: rgb(0, 183, 255);
+  display: none;
+  position: relative;
+  bottom: 8px;
+  }
+.hamburger{
+  height: 20px;
+  position: relative;
+  bottom: 2px;
+  margin-left: 5px;
+  display: none;
+  }
+.mobile-nav{
+  position: absolute;
+  top: 8vh; 
+  right: 0; 
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(155, 151, 151);
+  background-color: white;
+  justify-content: space-between;
+  padding: 5px;
+  padding-left: 15px;
+  overflow: hidden;
+  transition: all 500ms;
+  }
+.mobile-nav-hide{
+  height: 0;
+  padding: 0;
+  }
+.hero-image{
+  background-image: url("https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  }
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh; 
+  }
+.body-title{
+  font-family: "Nunito";
+  font-size:9vw;
+  letter-spacing: 15px;
+  color:  rgb(155, 151, 151);
+  }
+.body-text{
+  text-align: center;
+  font-size:.9rem;
+  color:   rgb(155, 151, 151);
+    }
+.start-button{
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: rgb(100,161,157);
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-top: 50px;
+  }
+.start-button:hover {
+  background-color: #467370;
+    }
+
+@media (max-width: 992px){
+  .header{
+    background-color: white;
+  }
+  .header-title {
+    color: black;
+  }
+}
+
+@media(max-width: 992px){
+  .nav-bar{
+    display: none;
+  }
+  .menu{
+    display: inline-block;
+  }
+  .menu-title{
+    display: inline-block;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+}
